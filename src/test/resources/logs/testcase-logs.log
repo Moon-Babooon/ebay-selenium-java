@@ -1,0 +1,22 @@
+21:43:49.254 [main] INFO  utilities.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+21:43:51.167 [main] INFO  utilities.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+21:43:57.359 [main] INFO  utilities.Logging -  | chrome | allCategoriesSearch | PASSED.
+-----------------------------------------------------------------------------------------
+21:43:57.360 [main] INFO  utilities.Logging -  | chrome | contextMenuTest | has started successfuly.
+21:44:01.966 [main] INFO  utilities.Logging -  | chrome | contextMenuTest | PASSED.
+-----------------------------------------------------------------------------------------
+21:44:01.967 [main] INFO  utilities.Logging -  | chrome | footerTest | has started successfuly.
+21:44:02.740 [main] INFO  utilities.Logging -  | chrome | footerTest | PASSED.
+-----------------------------------------------------------------------------------------
+21:44:02.741 [main] INFO  utilities.Logging -  | chrome | headerTest | has started successfuly.
+21:44:13.763 [main] FATAL utilities.Logging -  | chrome | headerTest | FAILED.
+-----------------------------------------------------------------------------------------
+21:44:13.768 [main] INFO  utilities.Logging -  | chrome | searchTest | has started successfuly.
+21:44:17.070 [main] INFO  utilities.Logging -  | chrome | searchTest | PASSED.
+-----------------------------------------------------------------------------------------
+21:44:17.071 [main] INFO  utilities.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+21:44:17.538 [main] INFO  utilities.Logging -  | chrome | shopByCategoryTest | PASSED.
+-----------------------------------------------------------------------------------------
+21:44:17.540 [main] INFO  utilities.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+

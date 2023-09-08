@@ -14,6 +14,7 @@ import java.util.List;
 
 public class EbayHomePage extends AbstractPage {
 
+
     public EbayHomePage(WebDriver driver) {
         // https://www.ebay.com
         super(driver, "https://www.ebay.com");
@@ -51,10 +52,10 @@ public class EbayHomePage extends AbstractPage {
 
     public List<WebElement> getFooterElements() {
         By FOOTER_LOCATOR = By.cssSelector("footer#glbfooter");
+        Utilities utilities = new Utilities();
 
         new WebDriverWait(driver, Duration.ofSeconds(10L))
                 .until(ExpectedConditions.visibilityOfElementLocated(FOOTER_LOCATOR));
-        Utilities utilities = new Utilities();
         utilities.scrollToBottom(driver);
         return driver.findElements(FOOTER_LOCATOR);
     }

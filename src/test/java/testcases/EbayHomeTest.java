@@ -11,7 +11,6 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pages.EbayHomePage;
-
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
@@ -86,7 +85,7 @@ public class EbayHomeTest extends DriverSetup {
         }
     }
 
-    @Test(priority = 1)
+    @Test()
     public void headerTest() {
         By HEADER_TOP = By.cssSelector("ul#gh-topl");
         By LOGO = By.cssSelector("a#gh-la");

@@ -25,43 +25,43 @@ public abstract class AbstractPage extends DriverSetup{
             quitDriver();
         }
 
-        public void moveToElement(WebElement element) {
-            Actions actions = new Actions(driver);
-            actions.moveToElement(element).perform();
-            try {
-                Thread.sleep(300);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+    public void moveToElement(WebElement element) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
+        try {
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
+    }
 
-        public void moveToElementByOffset(WebElement element, int x, int y) {
-            Actions actions = new Actions(driver);
-            actions.moveToElement(element, x, y).perform();
-        }
+    public void moveToElementByOffset(WebElement element, int x, int y) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element, x, y).perform();
+    }
 
-        public void moveToElementLocated(int x, int y) {
-            Actions actions = new Actions(driver);
-            actions.moveToLocation(x, y).perform();
-            try {
-                Thread.sleep(300);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+    public void moveToElementLocated(int x, int y) {
+        Actions actions = new Actions(driver);
+        actions.moveToLocation(x, y).perform();
+        try {
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
+    }
 
-        public void moveByOffset(int x, int y) {
-            Actions actions = new Actions(driver);
-            actions.moveByOffset(x, y).perform();
-            try {
-                Thread.sleep(300);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+    public void moveByOffset(int x, int y) {
+        Actions actions = new Actions(driver);
+        actions.moveByOffset(x, y).perform();
+        try {
+            Thread.sleep(300);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
+    }
 
-        public List<WebElement> getElements(By locator) {
-            return driver.findElements(locator);
-        }
+    public List<WebElement> getElements(By locator) {
+        return driver.findElements(locator);
+    }
 
 }

@@ -34,30 +34,30 @@ public class DriverSetup {
     }
 
     private void browserSetup() throws IOException {
-        if (this.driver == null){
+        if (driver == null){
             file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configs\\driverConfig.properties");
             properties.load(file);
         }
         if (properties.getProperty("browser").equalsIgnoreCase("chrome")){
             WebDriverManager.chromedriver().setup();
-            this.driver = new ChromeDriver();
+            driver = new ChromeDriver();
         } else if (properties.getProperty("browser").equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
-            this.driver = new FirefoxDriver();
+            driver = new FirefoxDriver();
         } else if (properties.getProperty("browser").equalsIgnoreCase("edge")) {
             WebDriverManager.edgedriver().setup();
-            this.driver = new EdgeDriver();
+            driver = new EdgeDriver();
         } else if (properties.getProperty("browser").equalsIgnoreCase("safari")) {
             WebDriverManager.safaridriver().setup();
-            this.driver = new SafariDriver();
+            driver = new SafariDriver();
         } else if (properties.getProperty("browser").equalsIgnoreCase("ie")) {
-            this.driver = new InternetExplorerDriver();
+            driver = new InternetExplorerDriver();
         }
     }
 
     private void driverTearDown() {
-        if (this.driver != null) {
-            this.driver.quit();
+        if (driver != null) {
+            driver.quit();
         }
     }
 }
