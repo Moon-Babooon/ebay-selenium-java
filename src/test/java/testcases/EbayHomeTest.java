@@ -3,7 +3,9 @@ package testcases;
 import base.DriverSetup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,6 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pages.EbayHomePage;
+
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
@@ -29,13 +32,13 @@ public class EbayHomeTest extends DriverSetup {
         ebayHomePage.quitBrowser();
     }
 
-    @BeforeTest
+    @BeforeMethod
     public void launchTest() {
         ebayHomePage = new EbayHomePage(driver);
         ebayHomePage.loadPage();
     }
 
-    @Test
+    @Test(testName = "Search Test")
     public void searchTest() {
         driver.manage().window().maximize();
         ebayHomePage.enterSearchValue("iPhone");
@@ -43,7 +46,7 @@ public class EbayHomeTest extends DriverSetup {
         Assert.assertTrue(result, "Search results do not meet the expectations");
     }
 
-    @Test
+    @Test(testName = "Main Menu Test")
     public void contextMenuTest() {
         By CONTEXT_MENU_LOCATOR = By.cssSelector("div.hl-cat-nav__flyout");
 
@@ -65,7 +68,7 @@ public class EbayHomeTest extends DriverSetup {
         }
     }
 
-    @Test
+    @Test(testName = "Footer Test")
     public void footerTest () {
         driver.manage().window().maximize();
 
@@ -85,7 +88,7 @@ public class EbayHomeTest extends DriverSetup {
         }
     }
 
-    @Test()
+    @Test(testName = "Header Test")
     public void headerTest() {
         By HEADER_TOP = By.cssSelector("ul#gh-topl");
         By LOGO = By.cssSelector("a#gh-la");
@@ -94,29 +97,29 @@ public class EbayHomeTest extends DriverSetup {
 
         driver.manage().window().maximize();
 
-        WebElement logo = driver.findElement(LOGO);
-        Assert.assertEquals(logo.getAttribute("href"), "https://www.ebay.com/");
-        List<WebElement> headers = ebayHomePage.getElements(HEADER_TOP);
-        new WebDriverWait(driver, Duration.ofSeconds(5L))
-                .until(ExpectedConditions.presenceOfAllElementsLocatedBy(HEADER_TOP));
-        for (WebElement header : headers) {
-            String headerName = header.getText();
-            boolean isPresent = header.isEnabled();
-            Assert.assertTrue(isPresent, headerName + " not found");
-        }
-        ebayHomePage.moveToElement(driver.findElement(MY_EBAY_BUTTON));
-        new WebDriverWait(driver, Duration.ofSeconds(10L))
-                .until(ExpectedConditions.attributeToBe(MY_EBAY_CONTEXT, "style", "display: block;"));
-        List<WebElement> myEbayList = ebayHomePage.getElements(MY_EBAY_CONTEXT);
-        for (WebElement element : myEbayList) {
-            String elementName = element.getText();
-            System.out.println(elementName);
-            boolean isPresent = element.isEnabled();
-            Assert.assertTrue(isPresent, elementName + " not found");
-        }
+            WebElement logo = driver.findElement(LOGO);
+            Assert.assertEquals(logo.getAttribute("href"), "https://www.ebay.com/");
+            List<WebElement> headers = ebayHomePage.getElements(HEADER_TOP);
+            new WebDriverWait(driver, Duration.ofSeconds(5L))
+                    .until(ExpectedConditions.presenceOfAllElementsLocatedBy(HEADER_TOP));
+            for (WebElement element : headers) {
+                String elementName = element.getText();
+                boolean isPresent = element.isEnabled();
+                Assert.assertTrue(isPresent, elementName + " not found");
+            }
+            ebayHomePage.moveToElement(driver.findElement(MY_EBAY_BUTTON));
+            new WebDriverWait(driver, Duration.ofSeconds(10L))
+                    .until(ExpectedConditions.attributeToBe(MY_EBAY_CONTEXT, "style", "display: block;"));
+            List<WebElement> myEbayList = ebayHomePage.getElements(MY_EBAY_CONTEXT);
+            for (WebElement element : myEbayList) {
+                String elementName = element.getText();
+                System.out.println(elementName);
+                boolean isPresent = element.isEnabled();
+                Assert.assertTrue(isPresent, elementName + " not found");
+            }
     }
 
-    @Test
+    @Test(testName = "Search By Category")
     public void shopByCategoryTest() {
         By CATEGORY_BUTTON = By.cssSelector("button#gh-shop-a");
         By CATEGORIES_MENU = By.cssSelector("div#gh-sbc-o");
@@ -135,7 +138,7 @@ public class EbayHomeTest extends DriverSetup {
         }
     }
 
-    @Test
+    @Test(testName = "Test of All Categories")
     public void allCategoriesSearch() {
         By SELECT_LOCATOR = By.cssSelector("select#gh-cat");
 
@@ -151,9 +154,9 @@ public class EbayHomeTest extends DriverSetup {
                 dropDownMenu.click();
                 String itemName = item.getText();
                 select.selectByVisibleText(itemName);
-                Assert.assertTrue(true);
             }
         }
+        dropDownMenu.click();
     }
 
 }

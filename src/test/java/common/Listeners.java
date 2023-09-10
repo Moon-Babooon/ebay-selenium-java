@@ -1,5 +1,6 @@
 package common;
 
+import base.DriverSetup;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -11,13 +12,15 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class Listeners extends Utilities implements ITestListener {
+public class Listeners extends DriverSetup implements ITestListener {
 
-    private Properties p = new Properties();
-    private FileReader file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configs\\driverConfig.properties");
+    private Utilities utilities;
+    private final Properties p = new Properties();
+    private final FileReader file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configs\\driverConfig.properties");
 
     public Listeners() throws FileNotFoundException {
     }
+
 
     public void onTestStart(ITestResult result) {
         Logging logging = new Logging();
@@ -32,6 +35,7 @@ public class Listeners extends Utilities implements ITestListener {
         logging.logInfo(" | "+browser+" | "+testName+" | has started successfuly.");
     }
 
+    @Override
     public void onTestSuccess(ITestResult result) {
         Logging logging = new Logging();
         try {
@@ -42,28 +46,33 @@ public class Listeners extends Utilities implements ITestListener {
 
         String testName = result.getName();
         String browser = p.getProperty("browser");
-        logging.logInfo(" | "+browser+" | "+testName+" | PASSED."
+        logging.logInfo(" | "+browser+" | "+testName+" | SUCCESS."
                 +"\n-----------------------------------------------------------------------------------------");
     }
 
+    @Override
     public void onTestFailure(ITestResult result) {
         Logging logging = new Logging();
         try {
             p.load(file);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.getCause();
         }
-
-        int status = result.getStatus();
         String browser = p.getProperty("browser");
-
+        @SuppressWarnings("unused")
+        int status = result.getStatus();
         String testName = result.getName();
-        logging.logFatal(" | "+browser+" | "+testName+" | FAILED."
-                +"\n-----------------------------------------------------------------------------------------");
 
-        //getScreenshot(browser, testName, status);
+        logging.logFatal(" | "+browser+" | "+testName+" | FAILURE."
+                +"\n-----------------------------------------------------------------------------------------");
+        try {
+            utilities.takeScreenshot(driver);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
+    @Override
     public void onTestSkipped(ITestResult result) {
         Logging logging = new Logging();
         try {
@@ -74,12 +83,8 @@ public class Listeners extends Utilities implements ITestListener {
 
         String testName = result.getName();
         String browser = p.getProperty("browser");
-        logging.logError(" | "+browser+" | "+testName+" | SKIPPED."
+        logging.logError(" | "+browser+" | "+testName+" | SKIP."
                 +"\n-----------------------------------------------------------------------------------------");
-    }
-
-    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-        // not implemented
     }
 
     public void onTestFailedWithTimeout(ITestResult result) {

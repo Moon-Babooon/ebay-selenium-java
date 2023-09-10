@@ -4,12 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import utilities.Utilities;
 
 import java.util.List;
 
-public abstract class AbstractPage extends DriverSetup{
+public abstract class AbstractPage extends DriverSetup {
 
-        private String url;
+        private final String url;
 
         public AbstractPage(WebDriver driver, String url) {
             this.driver = driver;
