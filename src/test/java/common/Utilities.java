@@ -1,12 +1,15 @@
-package utilities;
+package common;
 
+import base.DriverSetup;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
+import java.util.List;
 
-public class Utilities {
+public class Utilities extends BrowserOptions {
     private JavascriptExecutor js;
 
     public void scrollIntoView(WebDriver driver, WebElement element) {
@@ -24,9 +27,10 @@ public class Utilities {
         String textDate = date.toString().replace(":","-");
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(screenshot, new File(".\\src\\test\\resources\\screenshots\\"+textDate+".png"));
+            FileUtils.copyFile(screenshot, new File(".\\src\\test\\screenshots\\"+textDate+".png"));
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
+
 }

@@ -2,20 +2,14 @@ package base;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Date;
 import java.util.Properties;
 
 public abstract class DriverSetup {
@@ -24,7 +18,7 @@ public abstract class DriverSetup {
     public Properties properties = new Properties();
     public FileReader file;
 
-    public void launchBrowser() throws IOException {
+    public void setDriver() throws IOException {
         setup();
     }
 

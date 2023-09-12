@@ -1,22 +1,21 @@
 package common;
 
-import base.DriverSetup;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import utilities.Logging;
-import utilities.Utilities;
+import org.testng.*;
+import addons.Logging;
+import pages.EbayHomePage;
+import testcases.EbayHomeTest;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class Listeners extends DriverSetup implements ITestListener {
+public class Listeners extends BrowserOptions implements ITestListener {
 
-    private Utilities utilities;
     private final Properties p = new Properties();
     private final FileReader file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configs\\driverConfig.properties");
+    private EbayHomePage ebayHomePage;
+    private EbayHomeTest ebayHomeTest;
 
     public Listeners() throws FileNotFoundException {
     }
@@ -52,6 +51,8 @@ public class Listeners extends DriverSetup implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
+
+        ebayHomePage = new EbayHomePage(driver);
         Logging logging = new Logging();
         try {
             p.load(file);
@@ -66,6 +67,7 @@ public class Listeners extends DriverSetup implements ITestListener {
         logging.logFatal(" | "+browser+" | "+testName+" | FAILURE."
                 +"\n-----------------------------------------------------------------------------------------");
         try {
+            Utilities utilities = new Utilities();
             utilities.takeScreenshot(driver);
         } catch (Exception e) {
             System.out.println(e.getMessage());

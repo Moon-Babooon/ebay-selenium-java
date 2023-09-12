@@ -4,13 +4,14 @@ import base.AbstractPage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utilities.Utilities;
+import common.Utilities;
 
 import java.time.Duration;
 import java.util.List;
 
 public class EbayHomePage extends AbstractPage {
 
+    private Utilities utilities = new Utilities();
 
     public EbayHomePage(WebDriver driver) {
         // https://www.ebay.com
@@ -63,7 +64,8 @@ public class EbayHomePage extends AbstractPage {
 
         new WebDriverWait(driver, Duration.ofSeconds(10L))
                 .until(ExpectedConditions.elementToBeClickable(COUNTRY_MENU_BUTTON));
-        moveToElement(driver.findElement(COUNTRY_MENU_BUTTON));
+        WebElement countryMenuBtn = driver.findElement(COUNTRY_MENU_BUTTON);
+        moveToElement(countryMenuBtn);
         new WebDriverWait(driver, Duration.ofSeconds(5L))
                 .until(ExpectedConditions.attributeToBe(COUNTRY_MENU_BUTTON,"aria-expanded", "true"));
         return driver.findElements(COUNTRY_LIST);

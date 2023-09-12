@@ -1,88 +1,716 @@
-19:04:40.222 [main] INFO  utilities.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
-19:04:42.118 [main] INFO  utilities.Logging -  | chrome | allCategoriesSearch | has started successfuly.
-19:04:47.917 [main] INFO  utilities.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+19:04:40.222 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality ---
+19:04:42.118 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+19:04:47.917 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
 -----------------------------------------------------------------------------------------
-19:04:49.005 [main] INFO  utilities.Logging -  | chrome | contextMenuTest | has started successfuly.
-19:04:53.516 [main] INFO  utilities.Logging -  | chrome | contextMenuTest | SUCCESS.
+19:04:49.005 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+19:04:53.516 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-19:04:55.033 [main] INFO  utilities.Logging -  | chrome | footerTest | has started successfuly.
-19:04:55.724 [main] INFO  utilities.Logging -  | chrome | footerTest | SUCCESS.
+19:04:55.033 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+19:04:55.724 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-19:04:56.938 [main] INFO  utilities.Logging -  | chrome | headerTest | has started successfuly.
-19:04:57.533 [main] INFO  utilities.Logging -  | chrome | headerTest | SUCCESS.
+19:04:56.938 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+19:04:57.533 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-19:04:58.568 [main] INFO  utilities.Logging -  | chrome | searchTest | has started successfuly.
-19:05:01.738 [main] INFO  utilities.Logging -  | chrome | searchTest | SUCCESS.
+19:04:58.568 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+19:05:01.738 [main] INFO  addons.Logging -  | chrome | searchTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-19:05:02.952 [main] INFO  utilities.Logging -  | chrome | shopByCategoryTest | has started successfuly.
-19:05:03.142 [main] INFO  utilities.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+19:05:02.952 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+19:05:03.142 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-19:05:03.144 [main] INFO  utilities.Logging - Test Suite has finished execution : HomePageFunctionality
+19:05:03.144 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
 =========================================================================================
 
-12:59:34.889 [main] INFO  utilities.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
-12:59:36.573 [main] INFO  utilities.Logging -  | firefox | allCategoriesSearch | has started successfuly.
-12:59:54.386 [main] INFO  utilities.Logging -  | firefox | allCategoriesSearch | SUCCESS.
+12:59:34.889 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality ---
+12:59:36.573 [main] INFO  addons.Logging -  | firefox | allCategoriesSearch | has started successfuly.
+12:59:54.386 [main] INFO  addons.Logging -  | firefox | allCategoriesSearch | SUCCESS.
 -----------------------------------------------------------------------------------------
-12:59:55.520 [main] INFO  utilities.Logging -  | firefox | contextMenuTest | has started successfuly.
-13:00:00.062 [main] FATAL utilities.Logging -  | firefox | contextMenuTest | FAILURE.
+12:59:55.520 [main] INFO  addons.Logging -  | firefox | contextMenuTest | has started successfuly.
+13:00:00.062 [main] FATAL addons.Logging -  | firefox | contextMenuTest | FAILURE.
 -----------------------------------------------------------------------------------------
-13:00:01.047 [main] INFO  utilities.Logging -  | firefox | footerTest | has started successfuly.
-13:00:01.899 [main] INFO  utilities.Logging -  | firefox | footerTest | SUCCESS.
+13:00:01.047 [main] INFO  addons.Logging -  | firefox | footerTest | has started successfuly.
+13:00:01.899 [main] INFO  addons.Logging -  | firefox | footerTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:00:02.954 [main] INFO  utilities.Logging -  | firefox | headerTest | has started successfuly.
-13:00:03.569 [main] INFO  utilities.Logging -  | firefox | headerTest | SUCCESS.
+13:00:02.954 [main] INFO  addons.Logging -  | firefox | headerTest | has started successfuly.
+13:00:03.569 [main] INFO  addons.Logging -  | firefox | headerTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:00:04.642 [main] INFO  utilities.Logging -  | firefox | searchTest | has started successfuly.
-13:00:07.491 [main] INFO  utilities.Logging -  | firefox | searchTest | SUCCESS.
+13:00:04.642 [main] INFO  addons.Logging -  | firefox | searchTest | has started successfuly.
+13:00:07.491 [main] INFO  addons.Logging -  | firefox | searchTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:00:08.797 [main] INFO  utilities.Logging -  | firefox | shopByCategoryTest | has started successfuly.
-13:00:09.226 [main] INFO  utilities.Logging -  | firefox | shopByCategoryTest | SUCCESS.
+13:00:08.797 [main] INFO  addons.Logging -  | firefox | shopByCategoryTest | has started successfuly.
+13:00:09.226 [main] INFO  addons.Logging -  | firefox | shopByCategoryTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:00:09.228 [main] INFO  utilities.Logging - Test Suite has finished execution : HomePageFunctionality
+13:00:09.228 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
 =========================================================================================
 
-13:06:23.180 [main] INFO  utilities.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
-13:06:24.885 [main] INFO  utilities.Logging -  | edge | allCategoriesSearch | has started successfuly.
-13:06:30.095 [main] INFO  utilities.Logging -  | edge | allCategoriesSearch | SUCCESS.
+13:06:23.180 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality ---
+13:06:24.885 [main] INFO  addons.Logging -  | edge | allCategoriesSearch | has started successfuly.
+13:06:30.095 [main] INFO  addons.Logging -  | edge | allCategoriesSearch | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:06:31.144 [main] INFO  utilities.Logging -  | edge | contextMenuTest | has started successfuly.
-13:06:35.760 [main] INFO  utilities.Logging -  | edge | contextMenuTest | SUCCESS.
+13:06:31.144 [main] INFO  addons.Logging -  | edge | contextMenuTest | has started successfuly.
+13:06:35.760 [main] INFO  addons.Logging -  | edge | contextMenuTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:06:36.827 [main] INFO  utilities.Logging -  | edge | footerTest | has started successfuly.
-13:06:37.504 [main] INFO  utilities.Logging -  | edge | footerTest | SUCCESS.
+13:06:36.827 [main] INFO  addons.Logging -  | edge | footerTest | has started successfuly.
+13:06:37.504 [main] INFO  addons.Logging -  | edge | footerTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:06:38.527 [main] INFO  utilities.Logging -  | edge | headerTest | has started successfuly.
-13:06:39.104 [main] INFO  utilities.Logging -  | edge | headerTest | SUCCESS.
+13:06:38.527 [main] INFO  addons.Logging -  | edge | headerTest | has started successfuly.
+13:06:39.104 [main] INFO  addons.Logging -  | edge | headerTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:06:40.130 [main] INFO  utilities.Logging -  | edge | searchTest | has started successfuly.
-13:06:43.452 [main] INFO  utilities.Logging -  | edge | searchTest | SUCCESS.
+13:06:40.130 [main] INFO  addons.Logging -  | edge | searchTest | has started successfuly.
+13:06:43.452 [main] INFO  addons.Logging -  | edge | searchTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:06:44.536 [main] INFO  utilities.Logging -  | edge | shopByCategoryTest | has started successfuly.
-13:06:44.676 [main] INFO  utilities.Logging -  | edge | shopByCategoryTest | SUCCESS.
+13:06:44.536 [main] INFO  addons.Logging -  | edge | shopByCategoryTest | has started successfuly.
+13:06:44.676 [main] INFO  addons.Logging -  | edge | shopByCategoryTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:06:44.678 [main] INFO  utilities.Logging - Test Suite has finished execution : HomePageFunctionality
+13:06:44.678 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
 =========================================================================================
 
-13:12:19.970 [main] INFO  utilities.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
-13:12:21.651 [main] INFO  utilities.Logging -  | chrome | allCategoriesSearch | has started successfuly.
-13:12:27.378 [main] INFO  utilities.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+13:12:19.970 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality ---
+13:12:21.651 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+13:12:27.378 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:12:28.365 [main] INFO  utilities.Logging -  | chrome | contextMenuTest | has started successfuly.
-13:12:32.867 [main] INFO  utilities.Logging -  | chrome | contextMenuTest | SUCCESS.
+13:12:28.365 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+13:12:32.867 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:12:34.261 [main] INFO  utilities.Logging -  | chrome | footerTest | has started successfuly.
-13:12:34.927 [main] INFO  utilities.Logging -  | chrome | footerTest | SUCCESS.
+13:12:34.261 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+13:12:34.927 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:12:36.038 [main] INFO  utilities.Logging -  | chrome | headerTest | has started successfuly.
-13:12:36.657 [main] INFO  utilities.Logging -  | chrome | headerTest | SUCCESS.
+13:12:36.038 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+13:12:36.657 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:12:37.824 [main] INFO  utilities.Logging -  | chrome | searchTest | has started successfuly.
-13:12:41.083 [main] INFO  utilities.Logging -  | chrome | searchTest | SUCCESS.
+13:12:37.824 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+13:12:41.083 [main] INFO  addons.Logging -  | chrome | searchTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:12:42.258 [main] INFO  utilities.Logging -  | chrome | shopByCategoryTest | has started successfuly.
-13:12:42.433 [main] INFO  utilities.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+13:12:42.258 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+13:12:42.433 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
 -----------------------------------------------------------------------------------------
-13:12:42.435 [main] INFO  utilities.Logging - Test Suite has finished execution : HomePageFunctionality
+13:12:42.435 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+15:44:56.279 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+15:44:56.333 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+15:44:56.334 [main] ERROR addons.Logging -  | chrome | allCategoriesSearch | SKIP.
+-----------------------------------------------------------------------------------------
+15:44:56.336 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+15:44:56.336 [main] ERROR addons.Logging -  | chrome | contextMenuTest | SKIP.
+-----------------------------------------------------------------------------------------
+15:44:56.338 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+15:44:56.338 [main] ERROR addons.Logging -  | chrome | footerTest | SKIP.
+-----------------------------------------------------------------------------------------
+15:44:56.340 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+15:44:56.341 [main] ERROR addons.Logging -  | chrome | headerTest | SKIP.
+-----------------------------------------------------------------------------------------
+15:44:56.344 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+15:44:56.345 [main] ERROR addons.Logging -  | chrome | searchTest | SKIP.
+-----------------------------------------------------------------------------------------
+15:44:56.347 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+15:44:56.347 [main] ERROR addons.Logging -  | chrome | shopByCategoryTest | SKIP.
+-----------------------------------------------------------------------------------------
+15:44:56.349 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+15:46:58.555 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+15:47:00.141 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+15:47:05.729 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:47:06.717 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+15:47:11.232 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:47:12.409 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+15:47:13.101 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:47:14.234 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+15:47:14.820 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:47:15.905 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+15:47:29.438 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+15:47:30.626 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+15:47:30.799 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:47:30.801 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+15:50:02.300 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+15:50:03.912 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+15:50:09.476 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:50:10.577 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+15:50:15.127 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:50:16.485 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+15:50:17.153 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:50:18.115 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+15:50:18.689 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:50:19.975 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+15:50:33.256 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+15:50:34.405 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+15:50:34.566 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:50:34.568 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+15:51:53.165 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+15:51:54.840 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+15:52:00.287 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:52:01.443 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+15:52:06.006 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:52:07.150 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+15:52:07.887 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:52:09.102 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+15:52:09.697 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:52:10.846 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+15:52:24.637 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+15:52:25.839 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+15:52:26.011 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:52:26.013 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+15:53:58.682 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+15:54:00.576 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+15:54:06.225 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:54:07.564 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+15:54:12.103 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:54:13.231 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+15:54:13.919 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:54:15.236 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+15:54:15.806 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:54:16.979 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+15:54:30.787 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+15:54:32.046 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+15:54:32.216 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:54:32.218 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+15:55:28.822 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+15:55:30.373 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+15:55:35.895 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:55:36.921 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+15:55:41.483 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:55:42.774 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+15:55:43.553 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:55:44.521 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+15:55:45.100 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:55:46.151 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+15:55:59.308 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+15:56:00.406 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+15:56:00.571 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+15:56:00.573 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:05:07.114 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:05:08.770 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:05:14.286 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:05:15.415 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:05:19.934 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:05:21.017 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:05:21.723 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:05:23.073 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:05:23.667 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:05:24.829 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:05:38.117 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:05:39.522 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+16:05:39.702 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:05:39.704 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:06:34.556 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:06:36.300 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:06:41.770 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:06:43.580 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:06:48.159 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:06:49.333 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:06:50.063 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:06:51.212 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:06:51.804 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:06:52.850 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:07:06.035 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:07:47.305 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+16:07:47.489 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:07:47.492 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:09:17.184 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:09:19.007 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:09:24.574 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:09:25.564 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:09:30.089 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:09:31.280 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:09:31.992 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:09:33.152 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:09:33.754 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:09:34.829 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:09:45.449 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:09:46.549 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+16:09:46.717 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:09:46.719 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:12:53.050 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:12:54.628 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:12:59.725 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:13:00.714 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:13:00.728 [main] FATAL addons.Logging -  | chrome | contextMenuTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:13:01.932 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:13:01.941 [main] FATAL addons.Logging -  | chrome | footerTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:13:03.085 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:13:03.722 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:13:04.798 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:13:04.805 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:13:06.047 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+16:13:06.243 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:13:06.246 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:14:32.707 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:14:34.450 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:14:40.229 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:14:41.299 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:14:45.877 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:14:47.169 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:14:47.863 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:14:49.034 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:14:49.611 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:14:50.694 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:15:01.697 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:15:02.857 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+16:15:03.034 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:15:03.035 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:15:49.462 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:15:51.293 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:15:56.585 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:15:57.797 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:16:02.395 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:16:04.038 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:16:04.760 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:16:05.699 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:16:06.304 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:16:07.294 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:16:20.745 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:16:40.546 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+16:16:40.735 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:16:40.737 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:19:35.687 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:19:37.544 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:19:42.747 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:19:43.956 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:19:48.534 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:19:49.855 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:19:50.544 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:19:51.676 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:19:52.275 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:19:53.410 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:20:06.848 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:20:08.036 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+16:20:08.229 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:20:08.231 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:21:03.123 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:21:05.524 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:21:11.650 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:21:12.782 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:21:17.435 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:21:18.537 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:21:19.234 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:21:20.798 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:21:21.421 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:21:22.494 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:21:35.591 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:21:59.145 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+16:21:59.317 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:21:59.319 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:22:23.248 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:22:25.105 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:22:30.626 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:22:31.667 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:22:36.315 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:22:37.307 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:22:37.986 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:22:38.994 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:22:39.579 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:22:40.522 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:22:53.558 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+16:23:18.219 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+16:23:18.396 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:23:18.398 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:34:15.347 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:34:17.004 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:34:22.431 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:34:23.491 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:34:28.050 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:34:29.145 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:34:29.822 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:34:30.759 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:34:31.332 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:34:32.361 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:35:17.286 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:44:57.282 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:44:59.005 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:45:04.506 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:45:05.709 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:45:10.260 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:45:11.335 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:45:12.030 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:45:13.205 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:45:13.809 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:45:14.903 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:45:44.602 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+16:53:35.601 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+16:53:37.316 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+16:53:42.917 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:53:43.949 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+16:53:48.528 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:53:49.603 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+16:53:50.320 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:53:51.504 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+16:53:52.112 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+16:53:53.291 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+16:54:06.552 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+17:05:41.455 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+17:05:41.640 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:05:41.643 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+17:22:41.633 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+17:22:43.517 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+17:22:49.188 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:22:50.332 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+17:22:55.207 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:22:56.338 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+17:22:57.126 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:22:58.307 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+17:22:58.886 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:23:00.036 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+17:23:13.280 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+17:23:14.417 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+17:23:14.595 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:23:14.597 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+17:24:53.136 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+17:24:55.158 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+17:25:01.177 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:25:02.258 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+17:25:06.837 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:25:08.015 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+17:25:08.772 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:25:10.045 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+17:25:10.621 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:25:11.809 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+17:25:22.517 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+17:25:31.579 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+17:25:31.746 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:25:31.748 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+17:26:54.904 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+17:26:56.849 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+17:27:02.159 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:27:03.394 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+17:27:07.923 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:27:09.617 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+17:27:10.310 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:27:11.267 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+17:27:11.840 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:27:12.852 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+17:28:06.933 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+17:28:15.548 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+17:28:15.709 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:28:15.710 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+17:28:54.984 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+17:28:56.824 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+17:29:02.259 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:29:03.353 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+17:29:07.917 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:29:09.018 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+17:29:09.732 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:29:10.945 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+17:29:11.546 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:29:12.747 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+17:29:43.783 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+17:29:45.955 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+17:29:46.119 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:29:46.121 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+17:35:11.350 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+17:35:12.968 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+17:35:18.428 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:35:19.467 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+17:35:24.019 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:35:25.123 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+17:35:25.819 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:35:26.895 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+17:35:27.484 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:35:28.627 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+17:35:58.776 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+17:36:01.040 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+17:36:01.200 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:36:01.202 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+17:43:43.642 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+17:43:45.436 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+17:43:50.759 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:43:51.855 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+17:43:56.459 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:43:57.639 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+17:43:58.348 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:43:59.492 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+17:44:00.109 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:44:01.258 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+17:44:14.978 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+17:44:30.816 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+17:44:30.987 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:44:30.990 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+17:46:06.772 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+17:46:08.456 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+17:46:13.653 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:46:14.715 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+17:46:19.354 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:46:20.370 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+17:46:21.047 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:46:21.951 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+17:46:22.552 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:46:23.620 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+17:46:37.285 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+17:47:15.656 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+17:47:15.816 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:47:15.818 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+17:48:31.460 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+17:48:33.357 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+17:48:38.961 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:48:40.003 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+17:48:44.582 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:48:45.607 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+17:48:46.323 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:48:47.770 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+17:48:48.367 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:48:49.482 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+17:49:19.478 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+17:49:20.640 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+17:49:20.836 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:49:20.839 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+17:49:51.861 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+17:49:53.694 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+17:49:59.429 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:50:00.611 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+17:50:05.267 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:50:06.452 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+17:50:07.195 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:50:08.466 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+17:50:09.100 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:50:10.444 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+17:50:25.156 [main] FATAL addons.Logging -  | chrome | searchTest | FAILURE.
+-----------------------------------------------------------------------------------------
+17:50:26.262 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+17:50:26.429 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:50:26.431 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+18:11:14.961 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+18:11:16.517 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+18:11:21.656 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+18:11:22.707 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+18:11:22.786 [main] FATAL addons.Logging -  | chrome | contextMenuTest | FAILURE.
+-----------------------------------------------------------------------------------------
+18:11:23.869 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+18:11:24.053 [main] FATAL addons.Logging -  | chrome | footerTest | FAILURE.
+-----------------------------------------------------------------------------------------
+18:11:25.099 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+18:11:25.148 [main] FATAL addons.Logging -  | chrome | headerTest | FAILURE.
+-----------------------------------------------------------------------------------------
+18:11:26.193 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+18:11:29.709 [main] INFO  addons.Logging -  | chrome | searchTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+18:11:30.788 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+18:11:30.901 [main] FATAL addons.Logging -  | chrome | shopByCategoryTest | FAILURE.
+-----------------------------------------------------------------------------------------
+18:11:30.903 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+=========================================================================================
+
+18:29:39.598 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+18:29:41.570 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | has started successfuly.
+18:29:46.383 [main] INFO  addons.Logging -  | chrome | allCategoriesSearch | SUCCESS.
+-----------------------------------------------------------------------------------------
+18:29:47.536 [main] INFO  addons.Logging -  | chrome | contextMenuTest | has started successfuly.
+18:29:52.051 [main] INFO  addons.Logging -  | chrome | contextMenuTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+18:29:53.331 [main] INFO  addons.Logging -  | chrome | footerTest | has started successfuly.
+18:29:54.017 [main] INFO  addons.Logging -  | chrome | footerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+18:29:55.523 [main] INFO  addons.Logging -  | chrome | headerTest | has started successfuly.
+18:29:56.092 [main] INFO  addons.Logging -  | chrome | headerTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+18:29:57.229 [main] INFO  addons.Logging -  | chrome | searchTest | has started successfuly.
+18:30:00.322 [main] INFO  addons.Logging -  | chrome | searchTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+18:30:01.492 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | has started successfuly.
+18:30:01.663 [main] INFO  addons.Logging -  | chrome | shopByCategoryTest | SUCCESS.
+-----------------------------------------------------------------------------------------
+18:30:01.665 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
 =========================================================================================
 

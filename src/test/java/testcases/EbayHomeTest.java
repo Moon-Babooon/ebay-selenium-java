@@ -1,11 +1,8 @@
 package testcases;
 
-import base.DriverSetup;
-import org.openqa.selenium.By;
-import org.openqa.selenium.ElementNotInteractableException;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+import common.BrowserOptions;
+import common.Utilities;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,24 +10,15 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pages.EbayHomePage;
-
-import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
-public class EbayHomeTest extends DriverSetup {
+public class EbayHomeTest extends BrowserOptions {
 
     private EbayHomePage ebayHomePage;
+    @SuppressWarnings("unused")
+    private final Utilities utilities = new Utilities();
 
-    @BeforeSuite
-    public void startBrowser() throws IOException {
-        launchBrowser();
-    }
-
-    @AfterSuite
-    public void closeBrowser() {
-        ebayHomePage.quitBrowser();
-    }
 
     @BeforeMethod
     public void launchTest() {
@@ -107,7 +95,8 @@ public class EbayHomeTest extends DriverSetup {
                 boolean isPresent = element.isEnabled();
                 Assert.assertTrue(isPresent, elementName + " not found");
             }
-            ebayHomePage.moveToElement(driver.findElement(MY_EBAY_BUTTON));
+            WebElement myEbayBtn = driver.findElement(MY_EBAY_BUTTON);
+            ebayHomePage.moveToElement(myEbayBtn);
             new WebDriverWait(driver, Duration.ofSeconds(10L))
                     .until(ExpectedConditions.attributeToBe(MY_EBAY_CONTEXT, "style", "display: block;"));
             List<WebElement> myEbayList = ebayHomePage.getElements(MY_EBAY_CONTEXT);
