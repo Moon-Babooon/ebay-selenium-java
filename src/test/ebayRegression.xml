@@ -7,6 +7,7 @@
     <test thread-count="5" name="HomePageFunctionality">
         <classes>
             <class name="testcases.EbayHomeTest"/>
+            <class name="testcases.LoginTest"/>
         </classes>
     </test>
 </suite>

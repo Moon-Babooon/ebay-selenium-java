@@ -20,10 +20,6 @@ public abstract class AbstractPage extends DriverSetup {
         driver.get(url);
         }
 
-    public List<WebElement> getElements(By locator) {
-        return driver.findElements(locator);
-    }
-
     public void moveToElement(WebElement element) {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();

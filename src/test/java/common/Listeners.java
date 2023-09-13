@@ -2,12 +2,14 @@ package common;
 
 import org.testng.*;
 import addons.Logging;
+import org.testng.annotations.Test;
 import pages.EbayHomePage;
 import testcases.EbayHomeTest;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.Properties;
 
 public class Listeners extends BrowserOptions implements ITestListener {
@@ -28,8 +30,9 @@ public class Listeners extends BrowserOptions implements ITestListener {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-        String testName = result.getName();
+        Method method = result.getMethod().getConstructorOrMethod().getMethod();
+        Test test = method.getAnnotation(Test.class);
+        String testName = test.testName();
         String browser = p.getProperty("browser");
         logging.logInfo(" | "+browser+" | "+testName+" | has started successfuly.");
     }
@@ -42,8 +45,9 @@ public class Listeners extends BrowserOptions implements ITestListener {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-        String testName = result.getName();
+        Method method = result.getMethod().getConstructorOrMethod().getMethod();
+        Test test = method.getAnnotation(Test.class);
+        String testName = test.testName();
         String browser = p.getProperty("browser");
         logging.logInfo(" | "+browser+" | "+testName+" | SUCCESS."
                 +"\n-----------------------------------------------------------------------------------------");
@@ -62,13 +66,14 @@ public class Listeners extends BrowserOptions implements ITestListener {
         String browser = p.getProperty("browser");
         @SuppressWarnings("unused")
         int status = result.getStatus();
-        String testName = result.getName();
-
+        Method method = result.getMethod().getConstructorOrMethod().getMethod();
+        Test test = method.getAnnotation(Test.class);
+        String testName = test.testName();
         logging.logFatal(" | "+browser+" | "+testName+" | FAILURE."
                 +"\n-----------------------------------------------------------------------------------------");
         try {
             Utilities utilities = new Utilities();
-            utilities.takeScreenshot(driver);
+            utilities.takeScreenshot(driver, testName);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -82,8 +87,9 @@ public class Listeners extends BrowserOptions implements ITestListener {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-        String testName = result.getName();
+        Method method = result.getMethod().getConstructorOrMethod().getMethod();
+        Test test = method.getAnnotation(Test.class);
+        String testName = test.testName();
         String browser = p.getProperty("browser");
         logging.logError(" | "+browser+" | "+testName+" | SKIP."
                 +"\n-----------------------------------------------------------------------------------------");
