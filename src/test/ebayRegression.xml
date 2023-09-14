@@ -4,10 +4,12 @@
     <listeners>
         <listener class-name="common.Listeners"></listener>
     </listeners>
-    <test thread-count="5" name="HomePageFunctionality">
+    <test thread-count="5" name="Home Page Functionality">
         <classes>
             <class name="testcases.EbayHomeTest"/>
             <class name="testcases.LoginTest"/>
+            <class name="testcases.FilterTest"/>
+            <class name="testcases.GoogleAdsTest"/>
         </classes>
     </test>
 </suite>

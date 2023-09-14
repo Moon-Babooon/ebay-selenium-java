@@ -18,15 +18,7 @@ public abstract class DriverSetup {
     public Properties properties = new Properties();
     public FileReader file;
 
-    public void setDriver() throws IOException {
-        setup();
-    }
-
-    public void quitDriver() {
-        driverTearDown();
-    }
-
-    private void setup() throws IOException {
+    protected void setup() throws IOException {
         if (driver == null){
             file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configs\\driverConfig.properties");
             properties.load(file);
@@ -43,12 +35,12 @@ public abstract class DriverSetup {
         } else if (properties.getProperty("browser").equalsIgnoreCase("safari")) {
             WebDriverManager.safaridriver().setup();
             driver = new SafariDriver();
-        } else if (properties.getProperty("browser").equalsIgnoreCase("ie")) {
-            driver = new InternetExplorerDriver();
+        } else {
+            throw new RuntimeException();
         }
     }
 
-    private void driverTearDown() {
+    protected void driverTearDown() {
         if (driver != null) {
             driver.quit();
         }

@@ -61,9 +61,11 @@ public class EbayHomeTest extends BrowserOptions {
 
     @Test(testName = "Search Test")
     public void searchTest() {
+        By RESULTS_IMG_LOCATOR = By.cssSelector("div.s-item__image-wrapper");
+
         driver.manage().window().maximize();
         ebayHomePage.enterSearchValue("MacBook Pro");
-        boolean result = ebayHomePage.resultsToBeMoreThan(10);
+        boolean result = ebayHomePage.resultsToBeMoreThan(RESULTS_IMG_LOCATOR,10);
         Assert.assertTrue(result, "Search results do not meet the expectations");
     }
 

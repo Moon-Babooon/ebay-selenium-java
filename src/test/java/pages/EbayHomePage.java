@@ -62,12 +62,11 @@ public class EbayHomePage extends AbstractPage {
         searchButton.click();
     }
 
-    public boolean resultsToBeMoreThan(int resultsCount) {
-        By RESULTS_IMG_LOCATOR = By.cssSelector("div.s-item__image-wrapper");
-
+    public boolean resultsToBeMoreThan(By locator, int resultsCount) {
         new WebDriverWait(driver, Duration.ofSeconds(10L))
-                .until(ExpectedConditions.numberOfElementsToBeMoreThan(RESULTS_IMG_LOCATOR, resultsCount));
-        List<WebElement> result = driver.findElements(RESULTS_IMG_LOCATOR);
+                .until(ExpectedConditions.numberOfElementsToBeMoreThan(locator, resultsCount));
+        List<WebElement> result = driver.findElements(locator);
+        System.out.println("RESULTS FOUND: "+result.size());
         return result.size() > resultsCount;
     }
 

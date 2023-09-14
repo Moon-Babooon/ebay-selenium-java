@@ -11,13 +11,13 @@ import java.io.IOException;
 public class BrowserOptions extends DriverSetup {
 
     @BeforeClass
-    public void launchBrowser() throws IOException {
-        setDriver();
+    public void setDriver() throws IOException {
+        setup();
     }
 
     @AfterClass
-    public void quitBrowser() {
-        quitDriver();
+    public void quitDriver() {
+        driverTearDown();
     }
 
 }

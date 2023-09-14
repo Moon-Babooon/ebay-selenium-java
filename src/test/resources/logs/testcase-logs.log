@@ -1,57 +1,4 @@
-01:46:58.047 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
-01:47:01.454 [main] INFO  addons.Logging -  | chrome | Test of All Categories | has started successfuly.
-01:47:07.050 [main] INFO  addons.Logging -  | chrome | Test of All Categories | SUCCESS.
------------------------------------------------------------------------------------------
-01:47:08.026 [main] INFO  addons.Logging -  | chrome | Main Menu Test | has started successfuly.
-01:47:12.606 [main] INFO  addons.Logging -  | chrome | Main Menu Test | SUCCESS.
------------------------------------------------------------------------------------------
-01:47:13.744 [main] INFO  addons.Logging -  | chrome | Daily Deals Test | has started successfuly.
-01:47:15.220 [main] INFO  addons.Logging -  | chrome | Daily Deals Test | SUCCESS.
------------------------------------------------------------------------------------------
-01:47:16.481 [main] INFO  addons.Logging -  | chrome | Footer Test | has started successfuly.
-01:47:17.168 [main] INFO  addons.Logging -  | chrome | Footer Test | SUCCESS.
------------------------------------------------------------------------------------------
-01:47:18.297 [main] INFO  addons.Logging -  | chrome | Header Test | has started successfuly.
-01:47:18.900 [main] INFO  addons.Logging -  | chrome | Header Test | SUCCESS.
------------------------------------------------------------------------------------------
-01:47:20.027 [main] INFO  addons.Logging -  | chrome | Search Test | has started successfuly.
-01:47:23.812 [main] INFO  addons.Logging -  | chrome | Search Test | SUCCESS.
------------------------------------------------------------------------------------------
-01:47:25.039 [main] INFO  addons.Logging -  | chrome | Search By Category | has started successfuly.
-01:47:25.208 [main] INFO  addons.Logging -  | chrome | Search By Category | SUCCESS.
------------------------------------------------------------------------------------------
-01:47:25.403 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
-=========================================================================================
-
-01:50:11.736 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
-01:50:15.279 [main] INFO  addons.Logging -  | chrome | Test of All Categories | has started successfuly.
-01:50:21.256 [main] INFO  addons.Logging -  | chrome | Test of All Categories | SUCCESS.
------------------------------------------------------------------------------------------
-01:50:22.582 [main] INFO  addons.Logging -  | chrome | Main Menu Test | has started successfuly.
-01:50:27.231 [main] INFO  addons.Logging -  | chrome | Main Menu Test | SUCCESS.
------------------------------------------------------------------------------------------
-01:50:28.338 [main] INFO  addons.Logging -  | chrome | Daily Deals Test | has started successfuly.
-01:50:29.851 [main] INFO  addons.Logging -  | chrome | Daily Deals Test | SUCCESS.
------------------------------------------------------------------------------------------
-01:50:31.102 [main] INFO  addons.Logging -  | chrome | Footer Test | has started successfuly.
-01:50:31.801 [main] INFO  addons.Logging -  | chrome | Footer Test | SUCCESS.
------------------------------------------------------------------------------------------
-01:50:33.000 [main] INFO  addons.Logging -  | chrome | Header Test | has started successfuly.
-01:50:33.583 [main] INFO  addons.Logging -  | chrome | Header Test | SUCCESS.
------------------------------------------------------------------------------------------
-01:50:34.858 [main] INFO  addons.Logging -  | chrome | Search Test | has started successfuly.
-01:50:39.741 [main] INFO  addons.Logging -  | chrome | Search Test | SUCCESS.
------------------------------------------------------------------------------------------
-01:50:40.956 [main] INFO  addons.Logging -  | chrome | Search By Category | has started successfuly.
-01:50:41.155 [main] INFO  addons.Logging -  | chrome | Search By Category | SUCCESS.
------------------------------------------------------------------------------------------
-01:50:44.024 [main] INFO  addons.Logging -  | chrome | Login Test | has started successfuly.
-01:50:51.081 [main] FATAL addons.Logging -  | chrome | Login Test | FAILURE.
------------------------------------------------------------------------------------------
-01:50:51.261 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
-=========================================================================================
-
-02:05:26.089 [main] INFO  addons.Logging -  --- Test Suite started execution: HomePageFunctionality --- 
+02:05:26.089 [main] INFO  addons.Logging -  --- Test Suite started execution: Home Page Functionality ---
 02:05:29.435 [main] INFO  addons.Logging -  | chrome | Test of All Categories | has started successfuly.
 02:05:34.714 [main] INFO  addons.Logging -  | chrome | Test of All Categories | SUCCESS.
 -----------------------------------------------------------------------------------------
@@ -76,6 +23,74 @@
 02:05:54.328 [main] INFO  addons.Logging -  | chrome | Login Test | has started successfuly.
 02:06:00.576 [main] FATAL addons.Logging -  | chrome | Login Test | FAILURE.
 -----------------------------------------------------------------------------------------
-02:06:00.775 [main] INFO  addons.Logging - Test Suite has finished execution : HomePageFunctionality
+02:06:00.775 [main] INFO  addons.Logging - Test Suite has finished execution : Home Page Functionality
+=========================================================================================
+
+16:59:53.159 [main] INFO  addons.Logging -  --- Test Suite started execution: Home Page Functionality ---
+16:59:56.987 [main] INFO  addons.Logging -  | chrome | Test of All Categories | has started successfuly.
+17:00:02.702 [main] INFO  addons.Logging -  | chrome | Test of All Categories | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:00:03.804 [main] INFO  addons.Logging -  | chrome | Main Menu Test | has started successfuly.
+17:00:08.320 [main] INFO  addons.Logging -  | chrome | Main Menu Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:00:09.787 [main] INFO  addons.Logging -  | chrome | Daily Deals Test | has started successfuly.
+17:00:11.018 [main] INFO  addons.Logging -  | chrome | Daily Deals Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:00:12.133 [main] INFO  addons.Logging -  | chrome | Footer Test | has started successfuly.
+17:00:12.806 [main] INFO  addons.Logging -  | chrome | Footer Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:00:14.849 [main] INFO  addons.Logging -  | chrome | Header Test | has started successfuly.
+17:00:15.414 [main] INFO  addons.Logging -  | chrome | Header Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:00:16.480 [main] INFO  addons.Logging -  | chrome | Search Test | has started successfuly.
+17:00:19.895 [main] INFO  addons.Logging -  | chrome | Search Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:00:21.383 [main] INFO  addons.Logging -  | chrome | Search By Category | has started successfuly.
+17:00:21.549 [main] INFO  addons.Logging -  | chrome | Search By Category | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:00:24.468 [main] INFO  addons.Logging -  | chrome | Login Test | has started successfuly.
+17:00:31.124 [main] INFO  addons.Logging -  | chrome | Login Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:00:34.501 [main] INFO  addons.Logging -  | chrome | Search Filter Test | has started successfuly.
+17:00:38.540 [main] INFO  addons.Logging -  | chrome | Search Filter Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:00:41.595 [main] INFO  addons.Logging -  | chrome | Google Ads Test | has started successfuly.
+17:00:46.044 [main] INFO  addons.Logging -  | chrome | Google Ads Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:00:46.228 [main] INFO  addons.Logging - Test Suite has finished execution : Home Page Functionality
+=========================================================================================
+
+17:10:15.653 [main] INFO  addons.Logging -  --- Test Suite started execution: Home Page Functionality --- 
+17:10:19.518 [main] INFO  addons.Logging -  | chrome | Test of All Categories | has started successfuly.
+17:10:25.036 [main] INFO  addons.Logging -  | chrome | Test of All Categories | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:10:26.141 [main] INFO  addons.Logging -  | chrome | Main Menu Test | has started successfuly.
+17:10:30.656 [main] INFO  addons.Logging -  | chrome | Main Menu Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:10:31.817 [main] INFO  addons.Logging -  | chrome | Daily Deals Test | has started successfuly.
+17:10:33.101 [main] INFO  addons.Logging -  | chrome | Daily Deals Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:10:34.370 [main] INFO  addons.Logging -  | chrome | Footer Test | has started successfuly.
+17:10:35.088 [main] INFO  addons.Logging -  | chrome | Footer Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:10:36.248 [main] INFO  addons.Logging -  | chrome | Header Test | has started successfuly.
+17:10:36.855 [main] INFO  addons.Logging -  | chrome | Header Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:10:38.595 [main] INFO  addons.Logging -  | chrome | Search Test | has started successfuly.
+17:10:41.773 [main] INFO  addons.Logging -  | chrome | Search Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:10:42.928 [main] INFO  addons.Logging -  | chrome | Search By Category | has started successfuly.
+17:10:43.112 [main] INFO  addons.Logging -  | chrome | Search By Category | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:10:45.665 [main] INFO  addons.Logging -  | chrome | Login Test | has started successfuly.
+17:10:52.290 [main] INFO  addons.Logging -  | chrome | Login Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:10:55.379 [main] INFO  addons.Logging -  | chrome | Search Filter Test | has started successfuly.
+17:10:59.363 [main] INFO  addons.Logging -  | chrome | Search Filter Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:11:02.197 [main] INFO  addons.Logging -  | chrome | Google Ads Test | has started successfuly.
+17:11:06.979 [main] INFO  addons.Logging -  | chrome | Google Ads Test | SUCCESS.
+-----------------------------------------------------------------------------------------
+17:11:07.169 [main] INFO  addons.Logging - Test Suite has finished execution : Home Page Functionality
 =========================================================================================
 
