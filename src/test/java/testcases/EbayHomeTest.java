@@ -65,7 +65,7 @@ public class EbayHomeTest extends BrowserOptions {
 
         driver.manage().window().maximize();
         ebayHomePage.enterSearchValue("MacBook Pro");
-        boolean result = ebayHomePage.resultsToBeMoreThan(RESULTS_IMG_LOCATOR,10);
+        boolean result = ebayHomePage.resultsToBeMoreThan(RESULTS_IMG_LOCATOR,20);
         Assert.assertTrue(result, "Search results do not meet the expectations");
     }
 

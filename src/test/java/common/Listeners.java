@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.Date;
 import java.util.Properties;
 
 public class Listeners extends BrowserOptions implements ITestListener {
@@ -33,7 +34,7 @@ public class Listeners extends BrowserOptions implements ITestListener {
         Method method = result.getMethod().getConstructorOrMethod().getMethod();
         Test test = method.getAnnotation(Test.class);
         String testName = test.testName();
-        String browser = p.getProperty("browser");
+        String browser = p.getProperty("browser").toUpperCase();
         logging.logInfo(" | "+browser+" | "+testName+" | has started successfuly.");
     }
 
@@ -48,7 +49,7 @@ public class Listeners extends BrowserOptions implements ITestListener {
         Method method = result.getMethod().getConstructorOrMethod().getMethod();
         Test test = method.getAnnotation(Test.class);
         String testName = test.testName();
-        String browser = p.getProperty("browser");
+        String browser = p.getProperty("browser").toUpperCase();
         logging.logInfo(" | "+browser+" | "+testName+" | SUCCESS."
                 +"\n-----------------------------------------------------------------------------------------");
     }
@@ -63,20 +64,25 @@ public class Listeners extends BrowserOptions implements ITestListener {
         } catch (IOException e) {
             e.getCause();
         }
-        String browser = p.getProperty("browser");
+        String browser = p.getProperty("browser").toUpperCase();
         @SuppressWarnings("unused")
         int status = result.getStatus();
         Method method = result.getMethod().getConstructorOrMethod().getMethod();
         Test test = method.getAnnotation(Test.class);
+        Date date = new Date();
+        String textDate = date.toString().replace(":","-");
         String testName = test.testName();
-        logging.logFatal(" | "+browser+" | "+testName+" | FAILURE."
-                +"\n-----------------------------------------------------------------------------------------");
+        String screenshotName = browser+"-"+testName+"-FAILURE-";
+        String path = ".\\src\\test\\screenshots\\failed\\"+browser+"\\"+screenshotName+textDate+".png";
         try {
             Utilities utilities = new Utilities();
-            utilities.takeScreenshot(driver, testName);
+            utilities.takeScreenshot(driver, path);
+            logging.logWarning("Screenshot has been captured");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.err.println(e.getMessage());
         }
+        logging.logFatal(" | "+browser+" | "+testName+" | FAILURE."
+                +"\n-----------------------------------------------------------------------------------------");
     }
 
     @Override
@@ -90,7 +96,7 @@ public class Listeners extends BrowserOptions implements ITestListener {
         Method method = result.getMethod().getConstructorOrMethod().getMethod();
         Test test = method.getAnnotation(Test.class);
         String testName = test.testName();
-        String browser = p.getProperty("browser");
+        String browser = p.getProperty("browser").toUpperCase();
         logging.logError(" | "+browser+" | "+testName+" | SKIP."
                 +"\n-----------------------------------------------------------------------------------------");
     }

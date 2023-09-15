@@ -27,12 +27,12 @@ public class Utilities extends BrowserOptions {
         js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
     }
 
-    public void takeScreenshot(WebDriver driver, String name) {
-        Date date = new Date();
-        String textDate = date.toString().replace(":","-");
+    public void takeScreenshot(WebDriver driver, String path) {
+
+
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(screenshot, new File(".\\src\\test\\screenshots\\"+name+textDate+".png"));
+            FileUtils.copyFile(screenshot, new File(path));
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

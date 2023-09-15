@@ -14,11 +14,11 @@ import java.util.Properties;
 
 public abstract class DriverSetup {
 
-    public WebDriver driver;
-    public Properties properties = new Properties();
-    public FileReader file;
+    public static WebDriver driver;
+    public static Properties properties = new Properties();
+    public static FileReader file;
 
-    protected void setup() throws IOException {
+    protected static void setup() throws IOException {
         if (driver == null){
             file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configs\\driverConfig.properties");
             properties.load(file);
@@ -40,7 +40,7 @@ public abstract class DriverSetup {
         }
     }
 
-    protected void driverTearDown() {
+    protected static void driverTearDown() {
         if (driver != null) {
             driver.quit();
         }
