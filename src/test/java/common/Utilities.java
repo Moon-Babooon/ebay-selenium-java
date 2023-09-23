@@ -1,31 +1,17 @@
 package common;
 
-import base.DriverSetup;
+import base.WebDriverFactory;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import static testcases.cucumber.CucumberTestRunner.driver;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Date;
-import java.util.List;
 
 @SuppressWarnings("unused")
-public class Utilities extends BrowserOptions {
-    private JavascriptExecutor js;
-
-    public void scrollIntoView(WebDriver driver, WebElement element) {
-        js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", element);
-    }
-
-    public void scrollToBottom(WebDriver driver) {
-        js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-    }
+public class Utilities extends WebDriverFactory {
 
     public void takeScreenshot(WebDriver driver, String path) {
 

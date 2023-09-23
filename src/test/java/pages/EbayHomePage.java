@@ -17,7 +17,7 @@ public class EbayHomePage extends AbstractPage {
     private Logging logging;
 
     public EbayHomePage(WebDriver driver) {
-        // https://www.ebay.com
+        // https://www.ebay.com/
         super(driver, "https://www.ebay.com");
     }
 
@@ -53,13 +53,21 @@ public class EbayHomePage extends AbstractPage {
 
     public void enterSearchValue(String searchFor) {
         By SEARCH_INPUT_LOCATOR = By.cssSelector("input.ui-autocomplete-input");
-        By SEARCH_BUTTON_LOCATOR = By.cssSelector("input.btn");
-
         WebElement searchInput = driver.findElement(SEARCH_INPUT_LOCATOR);
         searchInput.clear();
         searchInput.sendKeys(searchFor);
-        WebElement searchButton = driver.findElement(SEARCH_BUTTON_LOCATOR);
-        searchButton.click();
+    }
+
+    public void executeSearch(boolean pressEnter) {
+        By SEARCH_INPUT_LOCATOR = By.cssSelector("input.ui-autocomplete-input");
+        By SEARCH_BUTTON_LOCATOR = By.cssSelector("input.btn");
+        WebElement searchInput = driver.findElement(SEARCH_INPUT_LOCATOR);
+        if (pressEnter) {
+            searchInput.sendKeys(Keys.ENTER);
+        } else {
+            WebElement searchButton = driver.findElement(SEARCH_BUTTON_LOCATOR);
+            searchButton.click();
+        }
     }
 
     public boolean resultsToBeMoreThan(By locator, int resultsCount) {
@@ -70,37 +78,5 @@ public class EbayHomePage extends AbstractPage {
         return result.size() > resultsCount;
     }
 
-    public List<WebElement> getContextMenuElements() {
-        By MENU_LIST_LOCATOR = By.cssSelector("ul.hl-cat-nav__container");
-        By MENU_ELEMENTS_LOCATOR = By.cssSelector("li.hl-cat-nav__js-tab");
-
-        WebElement menuList = driver.findElement(MENU_LIST_LOCATOR);
-        new WebDriverWait(driver, Duration.ofSeconds(10L))
-                .until(ExpectedConditions.elementToBeClickable(menuList));
-        return driver.findElements(MENU_ELEMENTS_LOCATOR);
-    }
-
-    public List<WebElement> getFooterElements() {
-        By FOOTER_LOCATOR = By.cssSelector("footer#glbfooter");
-        Utilities utilities = new Utilities();
-
-        new WebDriverWait(driver, Duration.ofSeconds(10L))
-                .until(ExpectedConditions.visibilityOfElementLocated(FOOTER_LOCATOR));
-        utilities.scrollToBottom(driver);
-        return driver.findElements(FOOTER_LOCATOR);
-    }
-
-    public List<WebElement> getSites() {
-        By COUNTRY_MENU_BUTTON = By.cssSelector("a#gf-fbtn");
-        By COUNTRY_LIST = By.cssSelector("div#gf-f");
-
-        new WebDriverWait(driver, Duration.ofSeconds(10L))
-                .until(ExpectedConditions.elementToBeClickable(COUNTRY_MENU_BUTTON));
-        WebElement countryMenuBtn = driver.findElement(COUNTRY_MENU_BUTTON);
-        moveToElement(countryMenuBtn);
-        new WebDriverWait(driver, Duration.ofSeconds(5L))
-                .until(ExpectedConditions.attributeToBe(COUNTRY_MENU_BUTTON,"aria-expanded", "true"));
-        return driver.findElements(COUNTRY_LIST);
-    }
 
 }

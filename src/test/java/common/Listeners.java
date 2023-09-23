@@ -1,10 +1,10 @@
 package common;
 
+import base.WebDriverFactory;
 import org.testng.*;
 import addons.Logging;
 import org.testng.annotations.Test;
 import pages.EbayHomePage;
-import testcases.EbayHomeTest;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -12,13 +12,13 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Date;
 import java.util.Properties;
+import static testcases.cucumber.CucumberTestRunner.driver;
 
-public class Listeners extends BrowserOptions implements ITestListener {
+public class Listeners extends WebDriverFactory implements ITestListener {
 
     private final Properties p = new Properties();
     private final FileReader file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configs\\driverConfig.properties");
     private EbayHomePage ebayHomePage;
-    private EbayHomeTest ebayHomeTest;
 
     public Listeners() throws FileNotFoundException {
     }
