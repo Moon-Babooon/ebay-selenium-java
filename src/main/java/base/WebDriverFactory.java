@@ -17,10 +17,10 @@ public class WebDriverFactory {
 
     @SneakyThrows
     public static WebDriver getDriver(){
-        String type = System.getProperty("driver.type", "LOCAL_FIREFOX");
+        String type = System.getProperty("driver.type", "LOCAL_CHROME");
         BrowserType browserType = BrowserType.valueOf(type);
         switch (browserType) {
-            case DOCKER_CHROME:
+            case DOCKER:
                 return initDockerChromeDriver();
             case DOCKER_FIREFOX:
                 return initDockerFirefoxDriver();

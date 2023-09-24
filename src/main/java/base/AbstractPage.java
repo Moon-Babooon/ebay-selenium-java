@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public abstract class AbstractPage extends WebDriverFactory{
 
     private final String url;

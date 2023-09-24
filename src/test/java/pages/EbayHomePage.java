@@ -13,7 +13,7 @@ import java.util.List;
 @SuppressWarnings("unused")
 public class EbayHomePage extends AbstractPage {
 
-    private Utilities utilities = new Utilities();
+    private final Utilities utilities = new Utilities();
     private Logging logging;
 
     public EbayHomePage(WebDriver driver) {

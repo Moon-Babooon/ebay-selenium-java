@@ -1,4 +1,4 @@
-package testcases.cucumber.web;
+package testcases.cucumber.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 import pages.EbayHomePage;
+import utils.DataHolder;
 
 import java.util.List;
 
@@ -19,7 +20,7 @@ import java.util.List;
 public class WebSteps {
 
     public static EbayHomePage ebayHomePage;
-    private SoftAssert softAssert = new SoftAssert();
+    private final SoftAssert softAssert = new SoftAssert();
 
     @Given("load the Ebay home page")
     public void loadHomePage() {
@@ -240,4 +241,44 @@ public class WebSteps {
                 System.out.println(adElement.getText()+"\n");
         }
     }
+
+    @Given("press on the 'Sign in' link")
+    public void startSignIn() {
+        By SIGN_IN_LINK = By.xpath("//a[text()='Sign in']");
+        ebayHomePage.getElement(SIGN_IN_LINK).click();
+    }
+
+    @Then("enter the {string} into a username field and press 'Continue' button")
+    public void enterUsername(String username) {
+        By USERNAME_INPUT_FIELD = By.cssSelector("input#userid");
+        By SIGNIN_CONTINUE_BUTTON = By.cssSelector("button#signin-continue-btn");
+        ebayHomePage.waitUntilVisible(USERNAME_INPUT_FIELD, 5L);
+        WebElement usernameInput = ebayHomePage.getElement(USERNAME_INPUT_FIELD);
+        usernameInput.sendKeys(DataHolder.getInstance().get(username).toString());
+        ebayHomePage.getElement(SIGNIN_CONTINUE_BUTTON).click();
+    }
+
+    @And("enter the {string} into a password field press on the 'Sign in' button")
+    public void enterPassword(String password) {
+        By PASSWORD_INPUT_FIELD = By.cssSelector("input#pass");
+        By FINAL_SIGNIN_BUTTON = By.cssSelector("button#sgnBt");
+        ebayHomePage.waitUntilVisible(PASSWORD_INPUT_FIELD, 5L);
+        WebElement passInput = ebayHomePage.getElement(PASSWORD_INPUT_FIELD);
+        passInput.sendKeys(DataHolder.getInstance().get(password).toString());
+        ebayHomePage.waitForElementToBeClickable(FINAL_SIGNIN_BUTTON, 2L);
+        ebayHomePage.getElement(FINAL_SIGNIN_BUTTON).click();
+    }
+
+    @Then("verify the successful login in the header section")
+    public void verifyLogin() {
+        By ACCOUNT_HEADER_BTN = By.cssSelector("button#gh-ug");
+        By ACCOUNT_WINDOW = By.cssSelector("div#gh-eb-u-o");
+        ebayHomePage.waitUntilVisible(ACCOUNT_HEADER_BTN, 5L);
+        WebElement myAccountButton = ebayHomePage.getElement(ACCOUNT_HEADER_BTN);
+        ebayHomePage.moveToElement(myAccountButton);
+        ebayHomePage.waitForAttributeToBe(ACCOUNT_HEADER_BTN, "aria-expanded", "true", 2L);
+        WebElement accountWindow = ebayHomePage.getElement(ACCOUNT_WINDOW);
+        Assert.assertTrue(accountWindow.isDisplayed(), "Account window is not visible");
+    }
+
 }

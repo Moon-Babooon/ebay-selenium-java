@@ -55,3 +55,11 @@ Feature: Ebay web functionality regression test
     Given enter the "iPad Pro" into the search field
     Given press ENTER
     Then scroll to bottom and verify that the ads section is not empty
+
+  Scenario: Login functionality test
+    Given load the Ebay home page
+    Given press on the 'Sign in' link
+    When get the "username" and "password" from the database
+    Then enter the "username" into a username field and press 'Continue' button
+    And enter the "password" into a password field press on the 'Sign in' button
+    Then verify the successful login in the header section
