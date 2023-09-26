@@ -1,4 +1,4 @@
 \target
 \allure-results
-src/main/docker/jenkins/jenkins_configuration/
-src/main/docker/jenkins/docker.sock/
+/src/main/docker/jenkins/jenkins_configuration/
+/src/main/docker/jenkins/docker.sock/
