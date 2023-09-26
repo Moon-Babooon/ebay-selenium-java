@@ -22,7 +22,7 @@ public class DBSteps {
 
         try {
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/TestDatabase", "testUsername", "testPassword");
+            connection = DriverManager.getConnection("jdbc:postgresql://postgres-db-1:5432/TestDatabase", "testUsername", "testPassword");
             statement = connection.createStatement();
             String queryBase = "SELECT %s FROM %s WHERE website='%s'";
             String tableName = "accounts";
