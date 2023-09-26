@@ -12,7 +12,8 @@ import testcases.cucumber.steps.WebSteps;
 @CucumberOptions(features = "src/test/java/testcases/cucumber/features/",
         plugin = {"pretty",
                 "json:target/cucumber-reports/Cucumber.json",
-                "html:target/cucumber-report.html"
+                "html:target/cucumber-report.html",
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         })
 public class CucumberTestRunner extends AbstractTestNGCucumberTests {
 
@@ -21,6 +22,7 @@ public class CucumberTestRunner extends AbstractTestNGCucumberTests {
     @BeforeSuite
     public static void launchBrowser() {
         driver = WebDriverFactory.getDriver();
+        driver.manage().window().maximize();
         WebSteps.ebayHomePage = new EbayHomePage(driver);
     }
 

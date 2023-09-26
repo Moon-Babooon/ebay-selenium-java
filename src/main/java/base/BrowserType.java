@@ -6,7 +6,7 @@ public enum BrowserType {
     LOCAL_FIREFOX,
     REMOTE_CHROME,
     REMOTE_FIREFOX,
-    DOCKER,
+    DOCKER_CHROME,
     DOCKER_FIREFOX;
 
 }

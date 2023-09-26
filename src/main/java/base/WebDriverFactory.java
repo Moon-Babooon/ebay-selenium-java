@@ -20,7 +20,7 @@ public class WebDriverFactory {
         String type = System.getProperty("driver.type", "REMOTE_FIREFOX");
         BrowserType browserType = BrowserType.valueOf(type);
         switch (browserType) {
-            case DOCKER:
+            case DOCKER_CHROME:
                 return initDockerChromeDriver();
             case DOCKER_FIREFOX:
                 return initDockerFirefoxDriver();
@@ -40,13 +40,11 @@ public class WebDriverFactory {
 
     private static WebDriver initLocalChromeDriver() {
         WebDriver driver = new ChromeDriver(chromeOptions());
-        driver.manage().window().maximize();
         return driver;
     }
 
     private static WebDriver initLocalFirefoxDriver() {
         WebDriver driver = new FirefoxDriver(firefoxOptions());
-        driver.manage().window().maximize();
         return driver;
     }
 

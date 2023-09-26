@@ -1403,3 +1403,114 @@
 13:43:52.236 [main] INFO  addons.Logging - Test Suite has finished execution : Home Page Functionality
 =========================================================================================
 
+13:51:58.315 [main] INFO  addons.Logging -  --- Test Suite started execution: Home Page Functionality --- 
+13:51:58.948 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.948 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:58.951 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.953 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:58.954 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.955 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:58.955 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.956 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:58.956 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.958 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:58.959 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.959 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:58.959 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.960 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:58.960 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.961 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:58.962 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.962 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:58.964 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.965 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:58.966 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:51:58.966 [main] ERROR addons.Logging -  | CHROME |  | SKIP.
+-----------------------------------------------------------------------------------------
+13:51:59.010 [main] INFO  addons.Logging - Test Suite has finished execution : Home Page Functionality
+=========================================================================================
+
+13:53:09.733 [main] INFO  addons.Logging -  --- Test Suite started execution: Home Page Functionality --- 
+13:53:10.290 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:53:15.407 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:53:15.409 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:53:18.379 [main] FATAL addons.Logging -  | CHROME |  | FAILURE.
+-----------------------------------------------------------------------------------------
+13:53:18.387 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:53:20.712 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:53:20.713 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:53:22.679 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:53:22.680 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:53:44.235 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:53:44.237 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:53:50.937 [main] FATAL addons.Logging -  | CHROME |  | FAILURE.
+-----------------------------------------------------------------------------------------
+13:53:50.939 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:53:54.441 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:53:54.442 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:53:56.979 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:53:56.980 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:54:04.521 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:54:04.524 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:54:11.231 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:54:11.233 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:54:20.717 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:54:20.793 [main] INFO  addons.Logging - Test Suite has finished execution : Home Page Functionality
+=========================================================================================
+
+13:58:30.314 [main] INFO  addons.Logging -  --- Test Suite started execution: Home Page Functionality --- 
+13:58:31.135 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:58:36.537 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:58:36.539 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:58:39.541 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:58:39.543 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:58:41.577 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:58:41.578 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:58:43.970 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:58:43.971 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:59:05.125 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:59:05.126 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:59:11.437 [main] FATAL addons.Logging -  | CHROME |  | FAILURE.
+-----------------------------------------------------------------------------------------
+13:59:11.446 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:59:27.955 [main] FATAL addons.Logging -  | CHROME |  | FAILURE.
+-----------------------------------------------------------------------------------------
+13:59:27.957 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:59:30.648 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:59:30.650 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:59:38.463 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:59:38.466 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:59:44.535 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:59:44.537 [main] INFO  addons.Logging -  | CHROME |  | has started successfuly.
+13:59:52.806 [main] INFO  addons.Logging -  | CHROME |  | SUCCESS.
+-----------------------------------------------------------------------------------------
+13:59:52.872 [main] INFO  addons.Logging - Test Suite has finished execution : Home Page Functionality
+=========================================================================================
+

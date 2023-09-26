@@ -44,9 +44,9 @@ public class DBSteps {
 
     private String getSQLHost() {
         // jdbc:postgresql://postgres-db-1:5432/TestDatabase
-        String type = System.getProperty("driver.type", "DOCKER");
+        String type = System.getProperty("driver.type", "DOCKER_CHROME");
         BrowserType browserType = BrowserType.valueOf(type);
-        if (BrowserType.DOCKER.equals(browserType)) {
+        if (BrowserType.DOCKER_CHROME.equals(browserType)) {
             return "jdbc:postgresql://postgres-db-1:5432/TestDatabase";
         }
         return "jdbc:postgresql://localhost:5432/TestDatabase";
