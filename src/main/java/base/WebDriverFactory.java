@@ -33,7 +33,7 @@ public class WebDriverFactory {
             case LOCAL_CHROME:
                 return initLocalChromeDriver();
             default:
-                System.err.println("DRIVER ERROR");
+                System.err.println("DRIVER NOT INITIALIZED");
         }
         throw new RuntimeException();
     }
