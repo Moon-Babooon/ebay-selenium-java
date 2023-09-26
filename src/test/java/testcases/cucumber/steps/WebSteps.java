@@ -133,6 +133,8 @@ public class WebSteps {
         By CONTEXT_MENU_LOCATOR = By.cssSelector("div.hl-cat-nav__flyout");
         ebayHomePage.waitUntilVisible(MENU_LIST_LOCATOR, 10L);
         List<WebElement> menuElements = ebayHomePage.getElements(MENU_ELEMENTS_LOCATOR);
+        int lastElement = menuElements.size() - 1;
+        menuElements.remove(lastElement);
         for (WebElement element : menuElements) {
             if (menuElements.iterator().hasNext()) {
                 try {
