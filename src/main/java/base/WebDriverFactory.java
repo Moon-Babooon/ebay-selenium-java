@@ -67,6 +67,7 @@ public class WebDriverFactory {
     private static ChromeOptions chromeOptions() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--disable-dev-shm-usage");
         options.setAcceptInsecureCerts(true);
         options.setCapability("selenoid:options", new HashMap<String, Object>() {{
             put("enableVideo", true);
