@@ -16,13 +16,13 @@ public class DBSteps {
 
     @SneakyThrows
     private void getDataFromDB(String keyUser, String keyPasswd) {
-        Connection connection = null;
-        Statement statement = null;
-        ResultSet resultSet = null;
+        Connection connection;
+        Statement statement;
+        ResultSet resultSet;
 
         try {
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection("jdbc:postgresql://postgres-db-1:5432/TestDatabase", "testUsername", "testPassword");
+            connection = DriverManager.getConnection(getSQLHost(), "testUsername", "testPassword");
             statement = connection.createStatement();
             String queryBase = "SELECT %s FROM %s WHERE website='%s'";
             String tableName = "accounts";
