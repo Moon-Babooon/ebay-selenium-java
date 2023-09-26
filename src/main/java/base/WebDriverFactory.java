@@ -17,7 +17,7 @@ public class WebDriverFactory {
 
     @SneakyThrows
     public static WebDriver getDriver(){
-        String type = System.getProperty("driver.type", "CHROME_REMOTE");
+        String type = System.getProperty("driver.type", "REMOTE_FIREFOX");
         BrowserType browserType = BrowserType.valueOf(type);
         switch (browserType) {
             case DOCKER:
