@@ -8,6 +8,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import pages.EbayHomePage;
 import testcases.cucumber.steps.WebSteps;
+import utils.DataHolder;
 
 @CucumberOptions(features = "src/test/java/testcases/cucumber/features/",
         plugin = {"pretty",
@@ -28,6 +29,7 @@ public class CucumberTestRunner extends AbstractTestNGCucumberTests {
 
     @AfterSuite
     public static void closeBrowser() {
+        DataHolder.getInstance().reset();
         driver.quit();
     }
 

@@ -2,4 +2,4 @@
 \allure-results
 /src/main/docker/jenkins/jenkins_configuration/
 /src/main/docker/jenkins/docker.sock/
-*.log
+/src/test/resources/logs/

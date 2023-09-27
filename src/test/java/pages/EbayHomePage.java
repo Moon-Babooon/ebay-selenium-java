@@ -70,13 +70,11 @@ public class EbayHomePage extends AbstractPage {
         }
     }
 
-    public boolean resultsToBeMoreThan(By locator, int resultsCount) {
-        new WebDriverWait(driver, Duration.ofSeconds(10L))
+    public void waitUntilResultCountToBeMoreThan(By locator, int resultsCount) {
+        new WebDriverWait(driver, Duration.ofSeconds(20L))
                 .until(ExpectedConditions.numberOfElementsToBeMoreThan(locator, resultsCount));
         List<WebElement> result = driver.findElements(locator);
         System.out.println("RESULTS FOUND: "+result.size());
-        return result.size() > resultsCount;
     }
-
 
 }

@@ -3,13 +3,13 @@ Feature: Ebay web functionality regression test
     Given load the Ebay home page
     And enter the "MacBook Pro" into the search field
     When press on the 'search' button
-    Then verify that search results are not empty
+    Then verify that search results are more than 30
 
   Scenario: Search test (enter)
     Given load the Ebay home page
     And enter the "MacBook Air" into the search field
     When press ENTER
-    Then verify that search results are not empty
+    Then verify that search results are more than 30
 
   Scenario: Header verification
     Given load the Ebay home page
@@ -25,7 +25,7 @@ Feature: Ebay web functionality regression test
   Scenario: 'All categories' drop down verification
     Given load the Ebay home page
     And click on the 'All categories' drop down button
-    Then verify the list of categories is not empty
+    Then verify the category drop down list is not empty
 
   Scenario: Main menu verification
     Given load the Ebay home page

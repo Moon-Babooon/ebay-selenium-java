@@ -12,7 +12,6 @@ import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 import pages.EbayHomePage;
 import utils.DataHolder;
-
 import java.util.List;
 
 
@@ -47,14 +46,14 @@ public class WebSteps {
         ebayHomePage.executeSearch(true);
     }
 
-    @Then("verify that search results are not empty")
-    public void verifySearchResults() {
-        System.out.println("Verifying");
+    @Then("verify that search results are more than {int}")
+    public void verifySearchResults(int result) {
+        System.out.println("Verifying...");
         By PRODUCT_TITLE = By.cssSelector("div.s-item__title");
         By PRODUCT_PRICE = By.cssSelector("span.s-item__price");
         List<WebElement> titles = ebayHomePage.getElements(PRODUCT_TITLE);
         List<WebElement> prices = ebayHomePage.getElements(PRODUCT_PRICE);
-        Assert.assertTrue(titles.size() > 30 && prices.size() > 30, "Results are not expected");
+        Assert.assertTrue(titles.size() > result && prices.size() > result, "Results are not expected");
     }
 
     @When("verify header navigation")
@@ -110,17 +109,19 @@ public class WebSteps {
         dropDownMenu.click();
     }
 
-    @Then("verify the list of categories is not empty")
+    @Then("verify the category drop down list is not empty")
     public void allCategoriesListVerification() {
         By SELECT_LOCATOR = By.cssSelector("select#gh-cat");
         By MENU_LIST = By.cssSelector("select#gh-cat option");
         WebElement dropDownMenu = ebayHomePage.getElement(SELECT_LOCATOR);
         Select select = new Select(dropDownMenu);
         List<WebElement> menuList = ebayHomePage.getElements(MENU_LIST);
+        Assert.assertTrue(menuList.size() >= 30, "Not enough categories");
         for (WebElement item : menuList) {
             if (menuList.iterator().hasNext()) {
                 dropDownMenu.click();
                 select.selectByVisibleText(item.getText());
+                softAssert.assertTrue(item.isSelected(), "Item not selected");
             }
         }
         dropDownMenu.click();
@@ -133,6 +134,7 @@ public class WebSteps {
         By CONTEXT_MENU_LOCATOR = By.cssSelector("div.hl-cat-nav__flyout");
         ebayHomePage.waitUntilVisible(MENU_LIST_LOCATOR, 10L);
         List<WebElement> menuElements = ebayHomePage.getElements(MENU_ELEMENTS_LOCATOR);
+        // last element not visible
         int lastElement = menuElements.size() - 1;
         menuElements.remove(lastElement);
         for (WebElement element : menuElements) {
@@ -212,7 +214,7 @@ public class WebSteps {
         By RESULTS_IMG_LOCATOR = By.cssSelector("div.s-item__image-wrapper");
         By LEFT_FILTER_SECTION_LOCATOR = By.cssSelector("div.srp-rail__left>ul>li>ul.x-refine__left__nav");
         By FILTER_LIST_LOCATOR = By.cssSelector("div.srp-rail__left>ul>li>ul.x-refine__left__nav>li");
-        ebayHomePage.resultsToBeMoreThan(RESULTS_IMG_LOCATOR, 50);
+        ebayHomePage.waitUntilResultCountToBeMoreThan(RESULTS_IMG_LOCATOR, 50);
         ebayHomePage.waitUntilVisible(LEFT_FILTER_SECTION_LOCATOR, 10L);
         List<WebElement> filterList = ebayHomePage.getElements(FILTER_LIST_LOCATOR);
         for (WebElement element : filterList) {
@@ -228,7 +230,7 @@ public class WebSteps {
         By SPONSORED_TITLE = By.xpath("//div[@id='adBlock']//span[text()='Sponsored']");
         By AD_BLOCK = By.cssSelector("div[aria-label='Ads by Google'] div[data-bg='true']");
         By IFRAME = By.cssSelector("iframe#master-1");
-        ebayHomePage.resultsToBeMoreThan(RESULTS_IMG_LOCATOR, 60);
+        ebayHomePage.waitUntilResultCountToBeMoreThan(RESULTS_IMG_LOCATOR, 60);
         ebayHomePage.scrollToBottom();
         ebayHomePage.waitUntilVisible(IFRAME, 15L);
         WebElement iFrame = ebayHomePage.getElement(IFRAME);

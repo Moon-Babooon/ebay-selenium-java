@@ -1,11 +1,10 @@
 package utils;
 
 import lombok.Getter;
-
 import java.util.HashMap;
 
-public class DataHolder {
 
+public class DataHolder {
     @Getter
     private static final DataHolder instance = new DataHolder();
 
@@ -14,7 +13,6 @@ public class DataHolder {
     private DataHolder() {
         this.holder = new HashMap<>();
     }
-
     public void put(String key, Object value) {
         holder.put(key, value);
     }
